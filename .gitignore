@@ -2,13 +2,16 @@
 _site
 .jekyll-metadata
 .jekyll-cache/
+cache
 
 ### NPM ###
 /node_modules/
+package-lock.json
 
 ### BUNDLE ###
 .bundle
 /vendor/
+Gemfile.lock
 
 ### PHPSTORM ###
 .idea/
