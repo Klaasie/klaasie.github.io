@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection { /* Code for Firefox */
+    background: rgba(20,184,166,var(--tw-text-opacity));
+}
+
+::selection {
+    background: rgba(20,184,166,var(--tw-text-opacity));
+}

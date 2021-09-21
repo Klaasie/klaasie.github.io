@@ -1,0 +1,15 @@
+domain: klaasie.github.io
+url: https://klaasie.github.io/
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+exclude:
+  - "*.config.js"
+  - "package*.json"
+  - "assets"
+  - "node_modules"
+  - "vendor"

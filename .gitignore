@@ -1,0 +1,14 @@
+### Jekyll ###
+_site
+.jekyll-metadata
+.jekyll-cache/
+
+### NPM ###
+/node_modules/
+
+### BUNDLE ###
+.bundle
+/vendor/
+
+### PHPSTORM ###
+.idea/
