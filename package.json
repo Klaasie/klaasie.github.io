@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "prod": "NODE_ENV=production npx webpack",
-    "dev": "NODE_ENV=development npx webpack",
+    "prod": "NODE_ENV=production npm webpack",
+    "dev": "NODE_ENV=development npm webpack",
     "watch": "NODE_ENV=development npx webpack --watch"
   },
   "devDependencies": {
