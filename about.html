@@ -1,0 +1,41 @@
+---
+permalink: /about
+title: About
+---
+
+<div class="items-start space-y-2 grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+    <div class="flex flex-col items-center pt-8 space-x-2">
+        <div>
+            <div class="rounded-xl w-64 shadow-md">
+                <img alt="avatar" aria-hidden="true" srcset="{{ '/images/me.png' | resize: '256x300>' }} 1x, {{ '/images/me.png' | resize: '384x384>' }} 2x" src="/images/me.png" class="w-64 rounded-xl">
+            </div>
+        </div>
+        <h3 class="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">Klaas Poortinga</h3>
+        <div class="text-gray-500 dark:text-gray-400">Software Engineer</div>
+        <a href="https://vdlp.nl" class="text-primary-500 hover:text-primary-600 dark:hover:text-primary-4000" target="_blank">@ Van der Let & Partners</a>
+<!--        <div class="flex pt-6 space-x-3">-->
+<!--            <a class="text-sm text-secondary-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="mailto:address@yoursite.com">-->
+<!--                <span class="sr-only">mail</span>-->
+<!--                &lt;!&ndash; SVG &ndash;&gt;-->
+<!--            </a>-->
+<!--            <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://github.com">-->
+<!--                <span class="sr-only">github</span>-->
+<!--                &lt;!&ndash; SVG &ndash;&gt;-->
+<!--            </a>-->
+<!--            <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com">-->
+<!--                <span class="sr-only">linkedin</span>-->
+<!--                &lt;!&ndash; SVG &ndash;&gt;-->
+<!--            </a>-->
+<!--            <a class="text-sm text-gray-500 transition hover:text-gray-600" target="_blank" rel="noopener noreferrer" href="https://twitter.com/Twitter">-->
+<!--                <span class="sr-only">twitter</span>-->
+<!--                &lt;!&ndash; SVG &ndash;&gt;-->
+<!--            </a>-->
+<!--        </div>-->
+    </div>
+
+    <div class="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+        {% capture aboutMe %}{% include about-me.md %}{% endcapture %}
+
+        {{ aboutMe | markdownify }}
+    </div>
+</div>
