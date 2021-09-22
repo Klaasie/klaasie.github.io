@@ -161,5 +161,7 @@ module.exports = {
         typography: ['dark'],
         display: ['dark']
     },
-    plugins: [],
+    plugins: [
+        require('@tailwindcss/typography'),
+    ]
 }
