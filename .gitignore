@@ -8,6 +8,7 @@ cache
 /node_modules/
 package-lock.json
 /dist/
+/_data/manifest.yml
 
 ### BUNDLE ###
 .bundle
