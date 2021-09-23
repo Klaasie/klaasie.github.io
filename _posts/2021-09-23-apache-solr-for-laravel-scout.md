@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "First post!"
-tags:   blog
+title:  "Apache Solr for Laravel Scout"
+category: Projects
+tags:   [Packages, PHP, Laravel]
 excerpt_separator: <!--more-->
 ---
 

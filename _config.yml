@@ -1,11 +1,25 @@
 domain: klaasie.github.io
 url: https://klaasie.github.io/
 
+collections:
+  category:
+    output: true
+
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
 exclude:
   - "*.config.js"

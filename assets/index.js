@@ -1,5 +1,5 @@
 function darkModeToggle() {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    if (localStorage.theme === 'dark') {
         document.querySelector('html').classList.remove('dark')
         localStorage.theme = 'light'
     } else {
