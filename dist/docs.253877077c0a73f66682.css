@@ -1315,11 +1315,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -1691,9 +1686,8 @@ video {
     padding-right: 0px;
   }
 
-  .xl\:py-8 {
+  .xl\:pt-8 {
     padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 
   .xl\:pt-11 {
