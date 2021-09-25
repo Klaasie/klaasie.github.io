@@ -33,6 +33,17 @@ module.exports = {
                 primary: colors.teal,
                 gray: colors.trueGray,
             },
+            backgroundColor: theme => ({
+                ...theme('colors'),
+                primary: colors.teal,
+            }),
+            textColor: theme => ({
+                ...theme('colors'),
+                primary: colors.teal
+            }),
+            maxWidth: {
+                'half': '50%',
+            },
             typography: (theme) => ({
                 DEFAULT: {
                     css: {

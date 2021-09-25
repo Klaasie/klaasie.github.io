@@ -8,7 +8,7 @@
                 </dd>
                 <dt>
                     {% if page.type != "category" %}
-                        <a href="/category/{{ post.category | downcase  }}" class="inline-flex items-center justify-center px-2 py-1 text-sm leading-none text-indigo-100 bg-indigo-700 rounded cursor-pointer">
+                        <a href="/category/{{ post.category | downcase  }}" class="inline-flex items-center justify-center px-2 py-1 text-sm leading-none text-primary-100 bg-primary-500 hover:bg-primary-600 dark:hover:bg-primary-400 rounded cursor-pointer">
                             {{ post.category }}
                         </a>
                     {% endif %}
