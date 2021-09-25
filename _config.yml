@@ -21,6 +21,10 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/posts/page/:num"
+
 exclude:
   - "*.config.js"
   - "package*.json"

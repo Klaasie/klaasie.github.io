@@ -1,0 +1,47 @@
+---
+title: Posts
+---
+
+<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+    {% for post in paginator.posts %}
+        {% include post-list-item.html %}
+    {% endfor %}
+</ul>
+
+<div class="flex flex-row my-12 mb-2 mb-3">
+    <div class="font-body py-3 text-sm text-gray-400 tracking-wide	">
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="text-primary-500 font-bold hover:text-primary-600 dark:hover:text-primary-400 ">
+            {% endif %}
+            <span class="mr-3">←</span>Previous
+            {% if paginator.previous_page %}
+        </a>
+        {% endif %}
+    </div>
+    <div class="flex-1 flex justify-center font-body text-sm md:visible sm:invisible">
+            {% for page in (1..paginator.total_pages) %}
+                <div class="mx-2">
+                    {% if page == paginator.page %}
+                        <div class="border-t-2 py-3 px-2 border-primary-500 text-primary-500">{{ page }}</div>
+                    {% elsif page == 1 %}
+                        <div class="py-3 px-2" style="margin-top: 2px;">
+                            <a href="{{ '/posts' | relative_url }}" class="hover:text-primary-600 dark:hover:text-primary-400">{{ page }}</a>
+                        </div>
+                    {% else %}
+                        <div class="py-3 px-2 " style="margin-top: 2px;">
+                            <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" class="hover:text-primary-600 dark:hover:text-primary-400">{{ page }}</a>
+                        </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+    </div>
+    <div class="font-body py-3 text-sm text-gray-400 tracking-wide	">
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="text-primary-500 font-bold hover:text-primary-600 dark:hover:text-primary-400">
+            {% endif %}
+            Next<span class="ml-3">→</span>
+            {% if paginator.next_page %}
+        </a>
+        {% endif %}
+    </div>
+</div>

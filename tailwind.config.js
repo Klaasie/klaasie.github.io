@@ -7,7 +7,8 @@ module.exports = {
         content: [
             './*.html',
             './_includes/*.html',
-            './_layouts/*.html'
+            './_layouts/*.html',
+            './posts/*.html'
         ],
         options: {
             safelist: ["dark"],
@@ -36,6 +37,10 @@ module.exports = {
             backgroundColor: theme => ({
                 ...theme('colors'),
                 primary: colors.teal,
+            }),
+            borderColor: theme => ({
+                ...theme('colors'),
+                primary: colors.teal
             }),
             textColor: theme => ({
                 ...theme('colors'),
