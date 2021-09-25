@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Rubik";
+
+  src: url(da39336cfcac7980f2f1.ttf);
+}
+
+@font-face {
+  font-family: "Poppins";
+
+  src: url(f41b63c0bb0963ace821.ttf);
+}
+
 /*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -322,7 +334,7 @@ ul {
  */
 
 html {
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -1020,6 +1032,14 @@ video {
   border-width: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1079,6 +1099,10 @@ video {
 
 .dark .dark\:hidden {
   display: none;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-10 {
@@ -1325,6 +1349,10 @@ video {
   padding-bottom: 3rem;
 }
 
+.pt-0 {
+  padding-top: 0px;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1345,20 +1373,32 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .pb-8 {
   padding-bottom: 2rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
-}
-
 .text-center {
   text-align: center;
+}
+
+.font-heading {
+  font-family: Rubik, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-body {
+  font-family: Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-xs {
@@ -1409,6 +1449,10 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .leading-5 {
@@ -1587,6 +1631,14 @@ video {
 }
 
 @media (min-width: 1440px) {
+  .xl\:visible {
+    visibility: visible;
+  }
+
+  .xl\:invisible {
+    visibility: hidden;
+  }
+
   .xl\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -1607,6 +1659,10 @@ video {
     grid-row-start: 2;
   }
 
+  .xl\:h-auto {
+    height: auto;
+  }
+
   .xl\:max-w-5xl {
     max-width: 64rem;
   }
@@ -1617,6 +1673,10 @@ video {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:flex-col {
+    flex-direction: column;
   }
 
   .xl\:items-baseline {
@@ -1657,16 +1717,6 @@ video {
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
   }
 
-  .xl\:divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(229, 229, 229, var(--tw-divide-opacity));
-  }
-
-  .dark .xl\:dark\:divide-gray-700 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgba(64, 64, 64, var(--tw-divide-opacity));
-  }
-
   .xl\:border-b {
     border-bottom-width: 1px;
   }
@@ -1679,6 +1729,10 @@ video {
   .dark .xl\:dark\:border-gray-700 {
     --tw-border-opacity: 1;
     border-color: rgba(64, 64, 64, var(--tw-border-opacity));
+  }
+
+  .xl\:p-8 {
+    padding: 2rem;
   }
 
   .xl\:px-0 {
@@ -1698,8 +1752,8 @@ video {
     padding-bottom: 0px;
   }
 
-  .xl\:pb-6 {
-    padding-bottom: 1.5rem;
+  .xl\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .xl\:pb-8 {
