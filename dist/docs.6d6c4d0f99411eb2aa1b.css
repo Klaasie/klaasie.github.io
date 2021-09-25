@@ -1049,6 +1049,11 @@ video {
   margin-right: auto;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mt-16 {
   margin-top: 4rem;
 }
@@ -1143,6 +1148,10 @@ video {
 
 .w-64 {
   width: 16rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-none {
@@ -1273,12 +1282,6 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-3 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -1403,6 +1406,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-6 {
@@ -1603,6 +1610,10 @@ video {
 .dark .dark\:hover\:text-primary-400:hover {
   --tw-text-opacity: 1;
   color: rgba(45, 212, 191, var(--tw-text-opacity));
+}
+
+.no-underline {
+  text-decoration: none;
 }
 
 .antialiased {
