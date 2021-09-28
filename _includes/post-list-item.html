@@ -2,16 +2,25 @@
     <article>
         <div class="space-y-2 grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
             <dl class="font-heading">
-                <dt class="sr-only">Published on</dt>
-                <dd class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                    <time datetime="2021-08-07T15:32:14.000Z">{{ post.date | date: "%-d %B %Y" }}</time>
-                </dd>
                 <dt>
                     {% if page.type != "category" %}
-                        <a href="/category/{{ post.category | downcase  }}" class="inline-flex items-center justify-center px-2 py-1 text-sm leading-none text-primary-100 bg-primary-500 hover:bg-primary-600 dark:hover:bg-primary-400 rounded cursor-pointer">
-                            {{ post.category }}
-                        </a>
+                    <a href="/category/{{ post.category | downcase  }}" class="inline-flex items-center justify-center px-2 py-1 text-sm leading-none text-primary-100 bg-primary-600 hover:bg-primary-700 dark:hover:bg-primary-500 rounded cursor-pointer">
+                        {{ post.category }}
+                    </a>
                     {% endif %}
+                </dt>
+                <dt class="text-base font-medium leading-6 text-gray-500 dark:text-gray-400 mt-2">
+                    <time datetime="2021-08-07T15:32:14.000Z">{{ post.date | date: "%-d %B %Y" }}</time>
+                </dt>
+                <dt class="mt-2 text-gray-500 dark:text-gray-400">
+                    {% capture time %}{{ content | reading_time }}{% endcapture %}
+
+                    <div class="flex flex-row items-center">
+                        <div class="w-6 mr-2">
+                            {% include read-time.svg %}
+                        </div>
+                        <div class="mt-1">{{ time }} {% if time == '1' %}minute{% else %}minutes{% endif %} to read</div>
+                    </div>
                 </dt>
             </dl>
             <div class="space-y-5 xl:col-span-3 font-body">

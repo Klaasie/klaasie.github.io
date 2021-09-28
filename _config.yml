@@ -1,6 +1,16 @@
 domain: klaasie.github.io
 url: https://www.klaas.frl
 
+title: "Klaas Poortinga"
+tagline: "Personal portfolio site"
+description: "Welcome to my personal portfolio website."
+author: "Klaas Poortinga"
+logo: "/images/device-icons/ms-icon-310x310.png"
+
+twitter:
+  username: KlaasPoortinga
+  card: summary
+
 collections:
   category:
     output: true
