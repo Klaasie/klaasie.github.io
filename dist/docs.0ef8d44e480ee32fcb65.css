@@ -10,7 +10,7 @@
   src: url(f41b63c0bb0963ace821.ttf);
 }
 
-/*! tailwindcss v2.2.15 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -1072,6 +1072,14 @@ video {
   margin-bottom: 3rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -1082,6 +1090,10 @@ video {
 
 .mr-1 {
   margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mr-3 {
@@ -1410,17 +1422,7 @@ video {
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
-.bg-primary-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(20, 184, 166, var(--tw-bg-opacity));
-}
-
 .bg-primary-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(13, 148, 136, var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(13, 148, 136, var(--tw-bg-opacity));
 }
@@ -1433,11 +1435,6 @@ video {
 .dark .dark\:bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgba(23, 23, 23, var(--tw-bg-opacity));
-}
-
-.dark .dark\:hover\:bg-primary-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(45, 212, 191, var(--tw-bg-opacity));
 }
 
 .dark .dark\:hover\:bg-primary-500:hover {
