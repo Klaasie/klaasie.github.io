@@ -181,7 +181,7 @@ module.exports = {
         },
     },
     variants: {
-        typography: ['dark'],
+        typography: ['dark', 'responsive'],
         display: ['dark']
     },
     plugins: [
