@@ -11,7 +11,6 @@ gem "github-pages", "~> 219"
 gem "jekyll", "~> 3.9"
 
 group :jekyll_plugins do
-  gem "jekyll-resize", git: "https://github.com/MichaelCurrin/jekyll-resize"
   gem 'jekyll-archives'
   gem 'jekyll-paginate'
   gem 'jekyll-sitemap'
