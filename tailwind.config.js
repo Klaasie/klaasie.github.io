@@ -2,18 +2,15 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-    purge: {
-        enabled: true,
-        content: [
-            './*.html',
-            './_includes/*.html',
-            './_layouts/*.html',
-            './posts/*.html'
-        ],
-        options: {
-            safelist: ["dark"],
-        },
-    },
+    content: [
+        './*.html',
+        './_includes/*.html',
+        './_layouts/*.html',
+        './posts/*.html'
+    ],
+    safelist: [
+        'dark'
+    ],
     darkMode: 'class',
     theme: {
         extend: {
@@ -32,7 +29,7 @@ module.exports = {
             },
             colors: {
                 primary: colors.teal,
-                gray: colors.trueGray,
+                gray: colors.neutral,
             },
             backgroundColor: theme => ({
                 ...theme('colors'),
@@ -179,10 +176,6 @@ module.exports = {
             lg: '976px',
             xl: '1440px',
         },
-    },
-    variants: {
-        typography: ['dark', 'responsive'],
-        display: ['dark']
     },
     plugins: [
         require('@tailwindcss/typography'),
