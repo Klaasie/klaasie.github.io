@@ -4,12 +4,30 @@ title:  "Keep Slim App"
 category: Projects
 tags:   [Apps, Flutter]
 excerpt_separator: <!--more-->
+images:
+- image_path: /images/keep-slim/main.jpg
+  title: Happy and healthy stickfigure.
+- image_path: /images/keep-slim/new-food.jpg
+  title: Adding new food
+- image_path: /images/keep-slim/favorite-food.jpg
+  title: List of favorite food
+- image_path: /images/keep-slim/fat.jpg
+  title: This stick figure has grown considerably in size!
+- image_path: /images/keep-slim/belly-content.jpg
+  title: Content of the belly
+- image_path: /images/keep-slim/settings.jpg
+  title: Settings view
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<!--more-->
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+During my free time I ran across a relatively new programming framework called [Flutter](https://flutter.dev/).
+Flutter is an open source framework for developing multi-platform apps. At the time of writing both Android and iOS are supported. Flutter uses dart as its coding language.<!--more-->
 
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+In my spare time I like to occasionally experiment with new and upcoming frameworks. Having been frustrated by most of the calorie counting apps, that make dieting feel like a chore, I decided to try and build a small calorie counting app adding some kind of gamification to the process.
+
+[Keep slim](https://play.google.com/store/apps/details?id=frl.klaas.diet) is the result of this experiment. An app that gives you a stick figure that you'll have to try and keep slim.
+The app allows manual input, or pick from a list of favorites. You can set your own body "breakpoints", these breakpoints are the points at which your stick figure will start growing.<br />
+For ease of adding food, a barcode scanner is part of this app, allowing you to get calorie information from the [the open food facts](https://world.openfoodfacts.org/).
+
+This app will be a daily challenge, every day the stick figure will reset and you get to try and keep it slim and healthy!
+
+{% include gallery.html %}

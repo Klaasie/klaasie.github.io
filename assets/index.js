@@ -1,3 +1,5 @@
+require('fslightbox')
+
 function darkModeToggle() {
     if (localStorage.theme === 'dark') {
         document.querySelector('html').classList.remove('dark')
