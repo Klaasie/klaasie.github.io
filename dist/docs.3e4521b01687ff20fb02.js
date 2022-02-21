@@ -1,1 +1,0 @@
-document.getElementById("darkModeToggle").addEventListener("click",(function(){"dark"===localStorage.theme?(document.querySelector("html").classList.remove("dark"),localStorage.theme="light"):(document.querySelector("html").classList.add("dark"),localStorage.theme="dark")}));
