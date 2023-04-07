@@ -3,14 +3,14 @@ permalink: /
 title: Latest
 ---
 
-<ul class="divide-y divide-gray-200 dark:divide-gray-700">
+<ul class="divide-y divide-gray-900 dark:divide-gray-300">
     {% for post in site.posts limit: 3 %}
         {% include post-list-item.html %}
     {% endfor %}
 </ul>
 
 <div class="flex flex-row justify-center">
-    <a href="/posts" class="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-primary-600 border border-transparent rounded-lg shadow mt-5 focus:outline-none focus:shadow-outline-blue hover:bg-primary-700 dark:hover:bg-primary-500">
+    <a href="/posts" class="inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-black dark:bg-primary-600 border border-transparent rounded-lg shadow mt-5 focus:outline-none focus:shadow-outline-blue hover:bg-primary-700 dark:hover:bg-primary-500">
         View more posts
     </a>
 </div>
