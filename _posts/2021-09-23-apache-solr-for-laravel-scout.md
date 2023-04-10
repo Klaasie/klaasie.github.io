@@ -4,10 +4,7 @@ title:  "Apache Solr for Laravel Scout"
 category: Projects
 tags:   [Packages, PHP, Laravel]
 excerpt_separator: <!--more-->
----
-
-Laravel Scout and Search Engines: My Experience with Apache Solr
-================================================================
+---
 
 If you're a [Laravel](https://laravel.com/) developer, you've probably heard of Laravel Scout – a package that makes it easy to add full-text search to your Laravel applications. In this post, I'll share my experience with [Apache Solr](https://lucene.apache.org/solr/) and explain why I created the [`klaasie/scout-solr-engine`](https://github.com/klaasie/scout-solr-engine) package, which offers a Laravel Scout implementation for Solr.
 
