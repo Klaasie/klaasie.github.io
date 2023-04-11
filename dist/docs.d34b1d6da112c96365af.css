@@ -501,13 +501,16 @@ video {
 }
 .prose :where(a):not(:where([class~="not-prose"] *)) {
     color: #0f766e;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: 500;
 }
 .prose :where(a):not(:where([class~="not-prose"] *)):hover {
     color: #0d9488;
 }
 .prose :where(a):not(:where([class~="not-prose"] *)) code {
+    color: #fff;
+}
+.prose :where(a):not(:where([class~="not-prose"] *)) code:hover {
     color: #2dd4bf;
 }
 .prose :where(strong):not(:where([class~="not-prose"] *)) {
@@ -659,7 +662,7 @@ video {
     color: #ec4899;
     font-weight: 600;
     font-size: 0.875em;
-    background-color: #f5f5f5;
+    background-color: #262626;
     padding-left: 4px;
     padding-right: 4px;
     padding-top: 2px;
@@ -667,10 +670,10 @@ video {
     border-radius: 0.25rem;
 }
 .prose :where(code):not(:where([class~="not-prose"] *))::before {
-    content: "`";
+    content: "";
 }
 .prose :where(code):not(:where([class~="not-prose"] *))::after {
-    content: "`";
+    content: "";
 }
 .prose :where(a code):not(:where([class~="not-prose"] *)) {
     color: inherit;
@@ -877,12 +880,6 @@ video {
 }
 .prose :where(h4,h5,h6):not(:where([class~="not-prose"] *)) {
     color: #171717;
-}
-.prose :where(code:before):not(:where([class~="not-prose"] *)) {
-    content: none;
-}
-.prose :where(code:after):not(:where([class~="not-prose"] *)) {
-    content: none;
 }
 .prose :where(details):not(:where([class~="not-prose"] *)) {
     background-color: #f5f5f5;
@@ -1322,8 +1319,8 @@ video {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-opacity-25 {
-    --tw-bg-opacity: 0.25;
+.bg-white\/30 {
+    background-color: rgb(255 255 255 / 0.3);
 }
 .fill-current {
     fill: currentColor;
@@ -1527,6 +1524,11 @@ video {
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.backdrop-blur {
+    --tw-backdrop-blur: blur(8px);
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
 .transition {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1574,15 +1576,23 @@ video {
 }
 
 :is(.dark .dark\:prose-dark) :where(a):not(:where([class~="not-prose"] *)) {
-    color: #14b8a6;
+    color: #fb923c;
 }
 
 :is(.dark .dark\:prose-dark) :where(a):not(:where([class~="not-prose"] *)):hover {
-    color: #2dd4bf;
+    color: #f97316;
+}
+
+:is(.dark .dark\:prose-dark) :where(a):not(:where([class~="not-prose"] *)) {
+    text-decoration: none;
 }
 
 :is(.dark .dark\:prose-dark) :where(a):not(:where([class~="not-prose"] *)) code {
-    color: #2dd4bf;
+    color: #fff;
+}
+
+:is(.dark .dark\:prose-dark) :where(a):not(:where([class~="not-prose"] *)) code:hover {
+    color: #fb923c;
 }
 
 :is(.dark .dark\:prose-dark) :where(h1):not(:where([class~="not-prose"] *)) {
@@ -1666,7 +1676,7 @@ video {
 
     .xl\:prose :where(a):not(:where([class~="not-prose"] *)) {
         color: #0f766e;
-        text-decoration: underline;
+        text-decoration: none;
         font-weight: 500;
     }
 
@@ -1675,6 +1685,10 @@ video {
     }
 
     .xl\:prose :where(a):not(:where([class~="not-prose"] *)) code {
+        color: #fff;
+    }
+
+    .xl\:prose :where(a):not(:where([class~="not-prose"] *)) code:hover {
         color: #2dd4bf;
     }
 
@@ -1859,7 +1873,7 @@ video {
         color: #ec4899;
         font-weight: 600;
         font-size: 0.875em;
-        background-color: #f5f5f5;
+        background-color: #262626;
         padding-left: 4px;
         padding-right: 4px;
         padding-top: 2px;
@@ -1868,11 +1882,11 @@ video {
     }
 
     .xl\:prose :where(code):not(:where([class~="not-prose"] *))::before {
-        content: "`";
+        content: "";
     }
 
     .xl\:prose :where(code):not(:where([class~="not-prose"] *))::after {
-        content: "`";
+        content: "";
     }
 
     .xl\:prose :where(a code):not(:where([class~="not-prose"] *)) {
@@ -2124,14 +2138,6 @@ video {
         color: #171717;
     }
 
-    .xl\:prose :where(code):not(:where([class~="not-prose"] *)):before {
-        content: none;
-    }
-
-    .xl\:prose :where(code):not(:where([class~="not-prose"] *)):after {
-        content: none;
-    }
-
     .xl\:prose :where(details):not(:where([class~="not-prose"] *)) {
         background-color: #f5f5f5;
         padding-left: 4px;
@@ -2166,9 +2172,9 @@ video {
     color: rgb(13 148 136 / var(--tw-text-opacity));
 }
 
-.hover\:text-primary-700:hover {
+.hover\:text-white:hover {
     --tw-text-opacity: 1;
-    color: rgb(15 118 110 / var(--tw-text-opacity));
+    color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
@@ -2199,9 +2205,9 @@ video {
     background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:bg-primary-600) {
+:is(.dark .dark\:bg-secondary-500) {
     --tw-bg-opacity: 1;
-    background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+    background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:text-gray-100) {
@@ -2219,9 +2225,9 @@ video {
     color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:text-primary-500) {
+:is(.dark .dark\:text-secondary-400) {
     --tw-text-opacity: 1;
-    color: rgb(20 184 166 / var(--tw-text-opacity));
+    color: rgb(251 146 60 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:text-white) {
@@ -2229,21 +2235,17 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-:is(.dark .dark\:hover\:bg-primary-500:hover) {
+:is(.dark .dark\:hover\:bg-secondary-600:hover) {
     --tw-bg-opacity: 1;
-    background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+    background-color: rgb(234 88 12 / var(--tw-bg-opacity));
 }
 
-:is(.dark .dark\:hover\:text-primary-400:hover) {
+:is(.dark .dark\:hover\:text-secondary-500:hover) {
     --tw-text-opacity: 1;
-    color: rgb(45 212 191 / var(--tw-text-opacity));
+    color: rgb(249 115 22 / var(--tw-text-opacity));
 }
 
 @media (min-width: 480px) {
-
-    .sm\:invisible {
-        visibility: hidden;
-    }
 
     .sm\:ml-4 {
         margin-left: 1rem;
