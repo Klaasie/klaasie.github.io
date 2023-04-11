@@ -6,7 +6,7 @@
         <div class="max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0">
             <div class="flex flex-col justify-between h-screen">
                 {% include header.html %}
-                <div class="mb-auto rounded-lg bg-white p-6 bg-opacity-25">
+                <div class="mb-auto rounded-lg p-6 backdrop-blur bg-white/30">
                     <article>
                         <div class="divide-y divide-gray-900 dark:divide-gray-300 font-heading">
                             <div class="pt-6 pb-6">
@@ -38,7 +38,7 @@
                                                     Category
                                                 </h2>
                                                 <div class="flex flex-wrap">
-                                                    <a href="/category/{{ page.category | slugify }}" class="mr-3 text-sm font-medium uppercase text-primary-700 dark:text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                                                    <a href="/category/{{ page.category | slugify }}" class="mr-3 text-sm font-medium uppercase text-primary-700 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-secondary-500">
                                                         {{ page.category }}
                                                     </a>
                                                 </div>
@@ -49,7 +49,7 @@
                                                 </h2>
                                                 <div class="flex flex-row xl:flex-col flex-wrap">
                                                     {% for tag in page.tags %}
-                                                    <a href="/tag/{{ tag | slugify }}" class="mr-3 text-sm font-medium uppercase text-primary-700 dark:text-primary-500 hover:text-primary-600 dark:hover:text-primary-400">
+                                                    <a href="/tag/{{ tag | slugify }}" class="mr-3 text-sm font-medium uppercase text-primary-700 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-secondary-500">
                                                         {{ tag }}
                                                     </a>
                                                     {% endfor %}
@@ -62,7 +62,7 @@
                                                 <h2 class="text-xs tracking-wide text-gray-900 uppercase dark:text-gray-400 mb-1 font-bold">
                                                     Previous Article
                                                 </h2>
-                                                <div class="text-primary-700 hover:text-primary-600 dark:hover:text-primary-400 font-light">
+                                                <div class="text-primary-700 hover:text-primary-600 dark:hover:text-secondary-500 font-light">
                                                     <a href="{{ page.previous.url }}">
                                                         {{ page.previous.title }}
                                                     </a>
@@ -74,7 +74,7 @@
                                                 <h2 class="text-xs tracking-wide text-gray-900 uppercase dark:text-gray-400 mb-1 font-bold">
                                                     Next Article
                                                 </h2>
-                                                <div class="text-primary-700 hover:text-primary-600 dark:hover:text-primary-400 font-light">
+                                                <div class="text-primary-700 hover:text-primary-600 dark:hover:text-secondary-500 font-light">
                                                     <a href="{{ page.next.url }}">
                                                         {{ page.next.title }}
                                                     </a>
@@ -96,7 +96,7 @@
                                         <h2 class="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400 mb-1 font-bold">
                                             Previous Article
                                         </h2>
-                                        <div class="text-primary-700 hover:text-primary-600 dark:hover:text-primary-400 font-light">
+                                        <div class="text-primary-700 hover:text-primary-600 dark:hover:text-secondary-500 font-light">
                                             <a href="{{ page.previous.url }}">
                                                 {{ page.previous.title }}
                                             </a>
@@ -108,7 +108,7 @@
                                         <h2 class="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400 mb-1 font-bold">
                                             Next Article
                                         </h2>
-                                        <div class="text-primary-700 hover:text-primary-600 dark:hover:text-primary-400 font-light">
+                                        <div class="text-primary-700 hover:text-primary-600 dark:hover:text-secondary-500 font-light">
                                             <a href="{{ page.next.url }}">
                                                 {{ page.next.title }}
                                             </a>

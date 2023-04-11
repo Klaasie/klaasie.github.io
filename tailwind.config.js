@@ -30,6 +30,7 @@ module.exports = {
             colors: {
                 primary: colors.teal,
                 gray: colors.neutral,
+                secondary: colors.orange
             },
             backgroundColor: theme => ({
                 ...theme('colors'),
@@ -55,7 +56,13 @@ module.exports = {
                             '&:hover': {
                                 color: theme('colors.primary.600'),
                             },
-                            code: { color: theme('colors.primary.400') },
+                            textDecoration: 'none',
+                            code: { 
+                                color: theme('colors.white'),
+                                '&:hover': {
+                                    color: theme('colors.primary.400'),
+                                },
+                            },
                         },
                         h1: {
                             fontWeight: '700',
@@ -76,18 +83,18 @@ module.exports = {
                         },
                         code: {
                             color: theme('colors.pink.500'),
-                            backgroundColor: theme('colors.gray.100'),
+                            backgroundColor: theme('colors.gray.800'),
                             paddingLeft: '4px',
                             paddingRight: '4px',
                             paddingTop: '2px',
                             paddingBottom: '2px',
                             borderRadius: '0.25rem',
                         },
-                        'code:before': {
-                            content: 'none',
-                        },
-                        'code:after': {
-                            content: 'none',
+                        'code::before': {
+                            content: '""'
+                          },
+                          'code::after': {
+                            content: '""'
                         },
                         details: {
                             backgroundColor: theme('colors.gray.100'),
@@ -116,11 +123,17 @@ module.exports = {
                     css: {
                         color: theme('colors.gray.300'),
                         a: {
-                            color: theme('colors.primary.500'),
+                            color: theme('colors.secondary.400'),
                             '&:hover': {
-                                color: theme('colors.primary.400'),
+                                color: theme('colors.secondary.500'),
                             },
-                            code: { color: theme('colors.primary.400') },
+                            textDecoration: 'none',
+                            code: { 
+                                color: theme('colors.white'),
+                                '&:hover': {
+                                    color: theme('colors.secondary.400'),
+                                },
+                            },
                         },
                         h1: {
                             fontWeight: '700',
